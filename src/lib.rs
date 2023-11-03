@@ -55,7 +55,7 @@ pub mod storage;
 
 /// Returns the tikv version information.
 pub fn tikv_version_info(build_time: Option<&str>) -> String {
-    let fallback = "Unknown (env var does not exist when building)";
+    let fallback = "Unknown (env var not exist when building)";
     format!(
         "\nRelease Version:   {}\
          \nEdition:           {}\
